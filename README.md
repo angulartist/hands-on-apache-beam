@@ -4,6 +4,10 @@
 
 Une explication simple de qu'est-ce que c'est que le traitement par lots (batch) et le traitement par flux (stream) avec Apache Beam et Cloud Dataflow.
 
+<p align="center">
+  <img width="625" height="352" src="https://www.geek.com/wp-content/uploads/2017/10/razer-phone-top-625x352.jpg">
+</p>
+
 ## Le traitement par lots (batch), qu’es aquò ?
 
 Imagine un mec qui s'appelle Bob. Bob c'est un développeur talentueux qui a conçu un jeu multi-joueurs en ligne sur smartphone. Bob veut analyser et comprendre le comportement de ses joueurs afin d'ajouter du contenu ayant du sens et susceptible de plaire. Pour cela, il enregistre toutes les actions des joueurs dans un fichier de logs horodaté, qui correspond à un jour de la semaine, pour le traiter plus tard :
@@ -25,7 +29,7 @@ Alors, pour ne plus attendre, Bob décide d'intégrer un pipeline d'agréation d
 
 On parle ici d'un traitement par flux, caractérisé par une latence faible et des résultats spéculatifs en temps-réel.
 
-> Todo:
+> Todo: Ecrire des trucs en bas.
 
 ## Architecture Lambda
 
