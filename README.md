@@ -19,7 +19,7 @@ Imagine un mec qui s'appelle Bob. Bob c'est un développeur talentueux qui a con
 
 Ok. Nous sommes Mardi et Bob décide de lancer son processus de traitement de données sur le fichier de logs de la veille. Par le biais de différentes opérations de transformation (map, reduce, filter, group by key, combine...), il va pouvoir agréger des données et extraire des informations pertinentes comme le nombre de crashs, le nombre de fois qu'un Boss a été battu, les top 5 produits qui se vendent le plus dans sa boutique etc. Ensuite, Bob n'a plus qu'à analyser les données en output et prendre des décisions.
 
-On parle donc ici de traitement par lots, caractérisé par un large volume de données traité avec une latence haute (heures, jours, semaines...)
+On parle donc ici de traitement par lots, caractérisé par un large volume de données traité avec une latence haute (heures, jours, semaines...).
 
 ## et le traitement par flux... (stream) ?
 
