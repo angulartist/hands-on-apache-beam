@@ -25,7 +25,7 @@ On parle donc ici de traitement par lots.
 
 Bob est pas très content. En effet, des joueurs malintentionnés abusent des quelques failles de son jeu pour générer de l'argent et des items. Et ça l’agace car il ne peut sanctionner les joueurs qu'après avoir analysé le fichier de logs de la veille ! 
 
-Alors, pour ne plus attendre, Bob décide d'intégrer un pipeline d'agréation de données en temps-réel à son processus. Via un pattern diffuseurs-abonnés (Publisher/Subscriber), Bob diffuse certains événements qui vont être consommés et traités aussitôt par son pipeline. En quasi-temps-réel, il voit apparaitre sur son tableau de bord des résultats spéculatifs sur les transactions qu'effectuent les joueurs. Bob est ravi car il est maintenant capable de détecter rapidement les anomalies et les fraudes qui surviennent dans son jeu afin de sanctionner les malotrus.
+Alors, pour ne plus attendre, Bob décide d'intégrer un pipeline d'agrégation de données en temps-réel à son processus. Via un pattern diffuseurs-abonnés (Publisher/Subscriber), Bob diffuse certains événements qui vont être consommés et traités aussitôt par son pipeline. En quasi-temps-réel, il voit apparaitre sur son tableau de bord des résultats spéculatifs sur les transactions qu'effectuent les joueurs. Bob est ravi car il est maintenant capable de détecter rapidement les anomalies et les fraudes qui surviennent dans son jeu afin de sanctionner les malotrus.
 
 On parle ici d'un traitement par flux, caractérisé par une latence faible et des résultats spéculatifs en temps-réel.
 
