@@ -22,7 +22,7 @@ Nous sommes Mardi et Bob décide de lancer son processus de traitement de donné
 
 --
 
-On parle donc ici de traitement par lots, caractérisé par un large volume de données traité avec une latence haute (heures, jours, semaines...). Les événements sont loggés et sockés (via du bucketing, découpage logique) pour être traités plus tard. Souvent le découpage des fichiers se fait par heures, jours, semaines, mois. Le traitement par lots est utile dans le cas où l'on n'a pas besoin de temps-réel mais où la complétude et l'exactitude des données sont des points cruciaux.
+On parle donc ici de traitement par lots, caractérisé par un large volume de données, sur une longue période, traité en une fois : ce qui engendre de la latence.  Les événements sont loggés et sockés (via du bucketing, découpage logique) pour être traités plus tard. Souvent le découpage des fichiers se fait par heures, jours, semaines, mois. Le traitement par lots est utile dans le cas où l'on n'a pas besoin d'avoir des résultats aussi vite que possible (temps-réel), mais où la complétude et l'exactitude des données sont des points cruciaux.
 
 ## et le traitement par flux... (stream) ?
 
@@ -38,7 +38,6 @@ On parle ici d'un traitement par flux, caractérisé par une latence faible et d
 * Détection de fraudes (ex: Finances, jeux multi-joueurs...)
 * Détection d'anomalies (ex: Capteurs de température dans une zone critique, monitoring de Web-Services...)
 * Analyse du trafic routier etc.
-
 
 > Todo: Ecrire des trucs en bas.
 
