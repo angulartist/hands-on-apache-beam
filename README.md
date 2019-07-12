@@ -26,13 +26,13 @@ On parle donc ici de traitement par lots, caractérisé par un large volume de d
 
 ## et le traitement par flux... (stream) ?
 
-Bob est pas très content. En effet, des joueurs malintentionnés abusent des quelques failles de son jeu pour générer de l'argent et des items. Et ça l’agace car il ne peut sanctionner les joueurs qu'après avoir analysé le fichier de logs de la veille ! 
+Bob n'est pas très content. En effet, des joueurs malintentionnés abusent des quelques failles de son jeu pour générer de l'argent et des items. Et ça l’agace car il ne peut sanctionner les joueurs qu'après avoir analysé le fichier de logs de la veille ! 
 
 Alors, pour ne plus attendre, Bob décide d'intégrer un pipeline d'agrégation de données en temps-réel à son processus. Via un pattern diffuseurs-abonnés (Publisher/Subscriber), Bob diffuse certains événements qui vont être consommés et traités aussitôt par son pipeline. En quasi-temps-réel, il voit apparaitre sur son tableau de bord des résultats spéculatifs sur les transactions qu'effectuent les joueurs. Bob est ravi car il est maintenant capable de détecter rapidement les anomalies et les fraudes qui surviennent dans son jeu afin de bannir les malotrus.
 
 --
 
-On parle ici d'un traitement par flux, caractérisé par une latence faible et des résultats spéculatifs en temps-réel. Les événements sont publiés, à la volée, continuellement, dans un service de messagerie (ex: Cloud PubSub / Apache Kafka) qui s'occupera de les distribuer aux différents abonnés (ex: un pipeline de traitement par flux). Le traitement par flux est utile dans les cas où l'on désire une latence faible (secondes, millisecondes) et des résultats spéculatifs en quasi temps-éel qui favorisent une prise de décision rapide :
+On parle ici d'un traitement par flux, caractérisé par une latence faible et des résultats spéculatifs en temps-réel. Les événements sont publiés, à la volée, continuellement, dans un service de messagerie (ex: Cloud PubSub / Apache Kafka) qui s'occupera de les distribuer aux différents abonnés (ex: un pipeline de traitement par flux). Le traitement par flux est utile dans les cas où l'on désire une latence faible (secondes, millisecondes) et des résultats spéculatifs en quasi temps-réel qui favorisent une prise de décision rapide :
 
 * Systèmes de recommandation (ex: playlists Spotify, produits Amazon, trending topics Twitter...)
 * Détection de fraudes (ex: Finances, jeux multi-joueurs...)
