@@ -44,9 +44,10 @@ On parle ici d'un traitement par flux, caractérisé par une latence faible et d
 ## Architecture Lambda
 
 - Batch + Stream processing
-- 1 layer de batch : competude, exactitude
+- 1 layer de batch : complétude/exactitude => traitements massifs et réguliers
 - 1 layer de stream : temps-réel
-- 2 layers différents = complexité + duplication de code = maintenance hardcore
+- 1 layer de service : exposer la data 
+- 3 layers différents = complexité + duplication de code = maintenance hardcore
 
 
 ## Apache Beam
