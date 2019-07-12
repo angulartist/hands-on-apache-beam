@@ -43,6 +43,8 @@ On parle ici d'un traitement par flux, caractérisé par une latence faible et d
 
 ## Architecture Lambda
 
+![](https://docs.microsoft.com/fr-fr/azure/cosmos-db/media/lambda-architecture/lambda-architecture-intro.png)
+
 - Batch + Stream processing
 - 1 layer de batch : complétude/exactitude => traitements massifs et réguliers
 - 1 layer de stream : temps-réel
