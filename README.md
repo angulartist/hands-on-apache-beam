@@ -10,7 +10,7 @@ Une explication simple de qu'est-ce que c'est que le traitement par lots (batch)
 
 ## Le traitement par lots (batch), qu’es aquò ?
 
-Imagine un mec qui s'appelle Bob. Bob c'est un développeur talentueux qui a conçu un jeu multi-joueurs en ligne sur smartphone. Bob veut analyser et comprendre le comportement de ses joueurs afin d'ajouter du contenu ayant du sens et susceptible de plaire. Pour cela, il enregistre toutes les actions des joueurs dans un fichier de logs horodaté, qui correspond à un jour de la semaine, pour le traiter plus tard :
+Imagine un mec qui s'appelle Bob. Bob c'est un développeur talentueux qui a conçu un jeu multi-joueurs en ligne sur smartphone. Bob veut analyser et comprendre le comportement de ses joueurs afin d'optimiser son jeu et d'ajouter du contenu ayant du sens et susceptible de plaire. Pour cela, il enregistre toutes les actions des joueurs dans un fichier de logs horodaté, qui correspond à un jour de la semaine, pour le traiter plus tard :
 
 * *X a tué Y - timestamp*
 * *X a acheté une super épée qui tue à 0.80€ dans la boutique - timestamp*
@@ -22,7 +22,7 @@ Nous sommes Mardi et Bob décide de lancer son processus de traitement de donné
 
 --
 
-On parle donc ici de traitement par lots, caractérisé par un large volume de données traité avec une latence haute (heures, jours, semaines...). Les événements sont loggés et sockés pour être traités plus tard. Souvent le découpage des fichiers se fait par heures, jours, semaines, mois. Le traitement par lots est utile dans le cas où l'on n'a pas besoin de temps-réel mais où la complétude et l'exactitude des données sont des points cruciaux.
+On parle donc ici de traitement par lots, caractérisé par un large volume de données traité avec une latence haute (heures, jours, semaines...). Les événements sont loggés et sockés (via du bucketing, découpage logique) pour être traités plus tard. Souvent le découpage des fichiers se fait par heures, jours, semaines, mois. Le traitement par lots est utile dans le cas où l'on n'a pas besoin de temps-réel mais où la complétude et l'exactitude des données sont des points cruciaux.
 
 ## et le traitement par flux... (stream) ?
 
