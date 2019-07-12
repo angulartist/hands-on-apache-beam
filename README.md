@@ -54,6 +54,9 @@ On parle ici d'un traitement par flux, caractérisé par une latence faible et d
 
 ## Cloud Pub/Sub
 
-## Exemple d'un jeu multijoueurs
+- No ops, global scale bus de messagerie
+- Publisher/Subscriber pattern
+- Glue
 
+## Exemple d'un jeu multijoueurs
 
