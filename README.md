@@ -34,7 +34,7 @@ Alors, pour ne plus attendre, Bob décide d'intégrer un pipeline d'agrégation 
 
 On parle ici d'un traitement par flux, caractérisé par une latence faible et des résultats spéculatifs en temps-réel. Les événements sont publiés, à la volée, continuellement, dans un service de messagerie (ex: Cloud PubSub / Apache Kafka) qui s'occupera de les distribuer aux différents abonnés (ex: un pipeline de traitement par flux). Le traitement par flux est utile dans les cas où l'on désire une latence faible (secondes, millisecondes) et des résultats spéculatifs en quasi temps-éel qui favorisent une prise de décision rapide :
 
-* Systèmes de recommendation (ex: playlists Spotify, produits Amazon, trending topics Twitter...)
+* Systèmes de recommandation (ex: playlists Spotify, produits Amazon, trending topics Twitter...)
 * Détection de fraudes (ex: Finances, jeux multi-joueurs...)
 * Détection d'anomalies (ex: Capteurs de température dans une zone critique, monitoring de Web-Services...)
 * Analyse du trafic routier etc.
