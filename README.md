@@ -43,8 +43,11 @@ On parle ici d'un traitement par flux, caractérisé par une latence faible et d
 
 ## Architecture Lambda
 
-- Ok 2 pipelines pour stream et batch c'est bien, mais chiant à maitenir un système aussi complexe.
-- Avantages/Inconvéniants/Solutions
+- Batch + Stream processing
+- 1 layer de batch : competude, exactitude
+- 1 layer de stream : temps-réel
+- 2 layers différents = complexité + duplication de code = maintenance hardcore
+
 
 ## Apache Beam
 
